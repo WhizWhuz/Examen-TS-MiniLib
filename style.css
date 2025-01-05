@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.clickopen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgb(94, 94, 94);
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+
+    button {
+        border-radius: 1em;
+        border: none;
+        color: white;
+        background-color: #008db8;
+        font-size: 48px;
+        padding: 1em;
+        box-shadow: inset 0px -6px 19px 0px rgb(0, 79, 124);
+        font-family:"DejaVu Sans","DejaVu Sans Mac Name","DejaVu Sans Unix Name","Times New Roman"
+    } 
+    
+    button:hover {
+        background-color: #00a8db;
+
+    }
+    
+    button:active {
+        background-color: #006280;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: flex-end;
+    height: 100%;
+    width: 100%;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    z-index: 1;
+}
+
+.shelf {
+    display: flex;
+    gap: 1em;
+}
+
+#book {
+    width: 18em;
+    height: 20em;
+    display: flex;
+    box-shadow: 3px 7px 0px 0px #717171;
+}
+
+.vl {
+    height: 100%;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin-left: 10%;
+    z-index: 100;
+}
+
+.titleandauthor {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: flex-end;
+}
+
+.modal {
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.modalwrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalholder {
+    display: flex;
+    gap: 2em;
+    width: 60vw;
+    padding: 1em;
+}
+
+.modalauthor {
+    font-size: 0.5em;
+    font-weight: 100;
+    font-style: italic;
+}
+.modaltitle {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.modaltitleandauthor {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 1em;
+
+}
+
+#modalbook {
+    width: 18em;
+    height: 100%;
+    display: flex;
+}
+
+.author {
+    font-size: 1em;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.desc {
+    font-size: 0.5em;
+    font-weight: 100;
+}
+
+.arrowback {
+    width: 2em;
+    position: absolute;
+    background-color: rgba(201, 201, 201, 0.712);
+    border-radius: 100%;
+    top: 50%;
+    left: 10%;
+}
+
+
+
+
+.opacity {
+    visibility: visible;
+    z-index: 99;
+}
+
+
+.boxinfo {
+    width: 100%;
+    height: 5em;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    gap: 0.5em;
+    font-size: 0.4em;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 1em;
+
+section {
+    display: flex;  
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
+
+
+figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    padding-block-start: 0em;
+    padding-block-end: 0em;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0em;
+    padding-block-end: 0em;
+    unicode-bidi: isolate;
+}
+
+header {
+    font-size: 64px;
+    top: 8%;
+    font-size: 62px;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    padding-block-start: 0em;
+    padding-block-end: 0em;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    padding-block-start: 0em;
+    padding-block-end: 0em;
+}
