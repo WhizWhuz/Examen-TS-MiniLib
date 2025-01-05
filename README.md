@@ -1,0 +1,1 @@
+Satsar på godkänt 🤞
